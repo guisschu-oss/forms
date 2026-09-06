@@ -1,0 +1,78 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+}
+
+.forma-caixa {
+    width: min(90%, 700px);
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+    box-sizing: border-box;
+}
+
+header {
+    padding: 10px;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 10px;
+}
+
+input,
+textarea {
+    box-sizing: border-box;
+    width: 100%;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 20px;
+    font-family: Arial, sans-serif;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+    background-color: #f2f2f2;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+input[type="submit"] {
+    background-color: #4c56af;
+    border-radius: 5px;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input:valid {
+    border-color: #4caf78;
+}
+
+input:invalid {
+    border-color: #f44336;
+}
+
+input:none {
+    border-color: #ccc;
+}
+
+input[type="submit"]:hover {
+    background-color: #3b4a8c;
+}
